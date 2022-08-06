@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LeftMenuViewController" customModule="POCLeftMenu" customModuleProvider="target">
+            <connections>
+                <outlet property="dimBackgroundView" destination="tDU-Ln-jHf" id="1rP-Yd-lzf"/>
+                <outlet property="leading" destination="Rvh-3H-v9F" id="4fR-Qn-Jm8"/>
+                <outlet property="menuCloseButton" destination="nCr-9C-qFI" id="Oxn-jn-t2P"/>
+                <outlet property="menuMainView" destination="V1R-vV-kSx" id="Lob-xZ-wH8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tDU-Ln-jHf">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V1R-vV-kSx">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fb1-7w-uqM">
+                            <rect key="frame" x="0.0" y="0.0" width="290" height="896"/>
+                            <viewLayoutGuide key="safeArea" id="22I-qL-seQ"/>
+                            <color key="backgroundColor" red="0.98059972044203658" green="1" blue="0.92273941085598543" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nCr-9C-qFI">
+                            <rect key="frame" x="290" y="0.0" width="124" height="896"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="1"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal">
+                                <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="onTappedMenuCloseButton:" destination="-1" eventType="touchUpInside" id="qc8-oT-EvN"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Fb1-7w-uqM" secondAttribute="bottom" id="7xd-7Y-VWb"/>
+                        <constraint firstItem="Fb1-7w-uqM" firstAttribute="width" secondItem="V1R-vV-kSx" secondAttribute="width" multiplier="0.7" id="8b7-Yb-ngZ"/>
+                        <constraint firstItem="Fb1-7w-uqM" firstAttribute="top" secondItem="V1R-vV-kSx" secondAttribute="top" id="ALr-gy-fo0"/>
+                        <constraint firstAttribute="trailing" secondItem="nCr-9C-qFI" secondAttribute="trailing" id="CZJ-Lt-MsQ"/>
+                        <constraint firstItem="Fb1-7w-uqM" firstAttribute="leading" secondItem="V1R-vV-kSx" secondAttribute="leading" id="IVa-ve-Xzv"/>
+                        <constraint firstItem="nCr-9C-qFI" firstAttribute="leading" secondItem="Fb1-7w-uqM" secondAttribute="trailing" id="LmI-iU-Ul6"/>
+                        <constraint firstAttribute="bottom" secondItem="nCr-9C-qFI" secondAttribute="bottom" id="dwj-SG-wit"/>
+                        <constraint firstItem="nCr-9C-qFI" firstAttribute="top" secondItem="V1R-vV-kSx" secondAttribute="top" id="wPq-fv-CXd"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="tDU-Ln-jHf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="56U-T9-DoC"/>
+                <constraint firstAttribute="trailing" secondItem="V1R-vV-kSx" secondAttribute="trailing" id="BL9-2w-Cdl"/>
+                <constraint firstAttribute="bottom" secondItem="tDU-Ln-jHf" secondAttribute="bottom" id="DCL-jW-soA"/>
+                <constraint firstAttribute="bottom" secondItem="V1R-vV-kSx" secondAttribute="bottom" id="Gzg-XL-aBg"/>
+                <constraint firstItem="V1R-vV-kSx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Rvh-3H-v9F"/>
+                <constraint firstItem="V1R-vV-kSx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="get-7x-N0t"/>
+                <constraint firstAttribute="trailing" secondItem="tDU-Ln-jHf" secondAttribute="trailing" id="itn-u8-MzV"/>
+                <constraint firstItem="tDU-Ln-jHf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="mJx-cT-Gmd"/>
+            </constraints>
+            <point key="canvasLocation" x="-59.420289855072468" y="81.696428571428569"/>
+        </view>
+    </objects>
+</document>
